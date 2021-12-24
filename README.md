@@ -1,4 +1,4 @@
-# Uninformed Search
+# Comprehensive Uninformed Search Review and Implementation
 The main uninformed search algorithms are implemented and discussed in detail. 
 
 This includes Breadth-First Search, Depth-First Search, Backtracking Search, Depth-Limited Search, Iterative-Deepening Search, Uniform-Cost Search, and Bi-directional Search.
