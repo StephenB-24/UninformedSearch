@@ -5,7 +5,7 @@ This includes Breadth-First Search, Depth-First Search, Backtracking Search, Dep
 
 <h2>What is uninformed search?</h2>
 
-Given a start node in a graph, an uninformed search will look for a goal node. However, he algorithm is not allowed/capable of determining/predicting how close to the goal it is. The efforts made by the algorithm are not directed by a score, or any similar concept. 
+Given a start node in a graph, an uninformed search algorithm will look for a goal node. However, the algorithm is not allowed/capable of determining/predicting how close to the goal it is. The efforts made by the algorithm are not directed by a score, or any similar concept. 
 
 An example of this would be placing a person in a country they know nothing about, and asking them to find a specific city without asking for directions or any other geological information.
 
