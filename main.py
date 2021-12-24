@@ -11,7 +11,8 @@ class PrioritizedItem:
 
 class Node:
     """The is a basic node class, consisting of a value, parent, and children."""
-    def __init__(self, val='', parent=None, children=None, childIndex = 0):
+
+    def __init__(self, val='', parent=None, children=None, childIndex=0):
         if children is None:
             self.children = []
         else:
@@ -185,14 +186,47 @@ def DepthLimitedSearch(startNode, goalNode, maxDepth):
 
 
 def IterativeDeepeningSearch(startNode, goalNode):
-    print("Not implemented")
+    depth = 0
+    while True:
+        result = DepthLimitedSearch(startNode, goalNode, depth)
+
+        if result is not None and result.val == goalNode.val:
+            return result
+
+        depth += 1
+
+
+def BestFirstSearch(startNode, goalNode, pathCost):
+    # TODO
+    print("Not Implemented")
+    # node = startNode
+    #
+    # frontier = queue.PriorityQueue()
+    # reached = {startNode: node}
+    #
+    # while not frontier.empty():
+    #     node = frontier.get()
+    #
+    #     if (node.val == goalNode.val):
+    #
+    #
+    #     if node.children is not None:
+    #         for child in node.children:
+    #             s = child.val
+    #
+    #             if not reached.__contains__(s) or 'path cost':
+    #
+    #
+    # return None
 
 
 def UniformCostSearch(startNode, goalNode):
-    print("Not implemented")
+    # TODO
+    return BestFirstSearch(startNode, goalNode, 'Path Costs')
 
 
 def BidirectionalSearch():
+    # TODO
     print("Not implemented")
 
 
@@ -226,7 +260,6 @@ C.children = [F, G]
 
 print("Breadth-First Search result (goal is F): ")
 answer = BreadthFirstSearch(A, F)
-
 
 '''
 Test tree 2
@@ -302,3 +335,12 @@ while node.parent is not None:
 
 while not answerPath.empty():
     print(answerPath.get())
+
+print('Iterative-Deepening Search:')
+answer = IterativeDeepeningSearch(A, M)
+
+# print('Uniform-Cost Search:')
+# answer = UniformCostSearch(A, M)
+#
+# print('Bi-directional Search:')
+# answer = BidirectionalSearch(A, M)
