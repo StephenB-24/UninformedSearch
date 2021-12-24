@@ -46,8 +46,15 @@ Is it complete - meaning it always finds a solution? No, if the graph infinitely
 
 <h2>Backtracking Search</h2>
 
-Backtracking Search is a modified version of Depth-First Search. In Backtracking Search, instead of adding all the children of an explored node to the frontier, a child is immediately picked, determined if it has been previously searched. If the selected node is new, the cycle continues on it. If not, the next child is picked. If all of the children have been explored, then the algorithm backtracks. Note that this is nearly the same way that Depth-First Search operates, except even less memory is used.
+Backtracking Search is a modified version of Depth-First Search. In Backtracking Search, instead of adding all the children of an explored node to the frontier, a child is immediately picked, and the parent remembers which child to offer next. If all of the children have been offered, then the algorithm backtracks. Note that this is nearly the same way that Depth-First Search operates, except even less memory is used. Instead of every child being added to the frontier, the 
 
+What is the time complexity? (Same as Depth-First Search) O(b^d)
+
+What is the space complexity? O(m), only 1 node per level explored is in memory.
+
+Does it always find the optimal-cost solution? (Same as Depth-First Search) No, the algorithm will return the first solution path that it finds. This is not necessarily the best one.
+
+Is it complete - meaning it always finds a solution? (Same as Depth-First Search) No, if the graph infinitely expands or has cycles, Depth-First Search can essentially become useless.
 
 <h2>Depth-Limited Search</h2>
 
