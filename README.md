@@ -32,9 +32,9 @@ In Breadth-First Search, the root node is expanded, then each of the successors,
 
 **What is the space complexity?** O(b^d)
 
-**Does it always find the optimal-cost solution?** Yes, so long as branching factor is finite, and the search space has a solution or is finite. If the search space has a solution, with infinite time and memory, it will be found eventually.
+**Does it always find the optimal-cost solution?** Yes, so long as all action costs are identical.
 
-**Is it complete - meaning it always finds a solution if one exists?** Yes, so long as all action costs are identical.
+**Is it complete - meaning it always finds a solution if one exists?** Yes, so long as branching factor is finite, and the search space has a solution or is finite. If the search space has a solution, with infinite time and memory, it will be found eventually.
 
 <h2>Depth-First Search</h2>
 
