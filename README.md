@@ -44,7 +44,7 @@ In Depth-First Search, the deepest node is repeatedly expanded. After each expan
 
 <h3>Analysis</h3>
 
-**What is the time complexity?** O(b^d)
+**What is the time complexity?** O(b^m)
 
 **What is the space complexity?** O(b*m)
 
