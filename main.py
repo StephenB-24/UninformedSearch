@@ -36,11 +36,9 @@ class Node:
 
 '''
 In the following uninformed search algorithms, the implementation of each algorithm is attempted to be mimicked
-as closely ass possible to the strict definition/behavior of the search algorithm. In other words, any modifications or
+as closely as possible to the strict definition/behavior of the search algorithm. In other words, any modifications or
 improvements to each algorithm was attempted to be avoided.
 '''
-
-
 def BreadthFirstSearch(startNode, goalNode):
     """
     A Breadth-First Search algorithm.
